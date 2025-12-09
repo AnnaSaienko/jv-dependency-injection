@@ -66,7 +66,7 @@ public class Injector {
                 throw new RuntimeException("Injection failed, missing @Component annotation on "
                         + "the class " + clazz);
             }
-        } catch (RuntimeException | ReflectiveOperationException e) {
+        } catch (ReflectiveOperationException e) {
             throw new RuntimeException(e.getMessage(), e);
         }
     }
